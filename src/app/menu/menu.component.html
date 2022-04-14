@@ -1,0 +1,10 @@
+<header>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div><a href="https://www.w3schools.com"  class="navbar-brand">Department</a></div>
+    
+    <ul class="navbar-nav navbar-collapse justify-content-end">
+         <li><a *ngIf="isUserLogin" routerLink="/login" class="nav-link">Login</a></li>
+        <li><a *ngIf="!isUserLogin" routerLink="/logout" class="nav-link">Logout</a></li>
+    </ul>
+</nav>
+</header>
